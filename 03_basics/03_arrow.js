@@ -33,4 +33,4 @@ console.log(add(1,2));
 
 const myArray=[2,5,3,4,87,7]
 
-myArray.forEach()
+//myArray.forEach()

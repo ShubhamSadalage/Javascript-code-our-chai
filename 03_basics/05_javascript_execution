@@ -1,0 +1,56 @@
+//Javasript Execution
+//Global EC --> this
+
+//[{}] js File
+//->Global ExecutionnContext
+//-->Function Execution Context
+//-->Eval Execution Context
+
+//js run in two phases 
+//-->Memory Creation Phase
+//-->Execution Phase
+
+let val1=10
+let val2=5
+function add(num1,num2){
+    let total = num1+num2
+}
+let result1=add(val1,val2)
+let result2=add(10,2)
+
+// steps to execute above code
+
+// 1.global execution
+ //--->thise
+
+ //2.Memory Phase 
+ //val1 -->undefined
+ //val2 -->undefined
+ //add -->defination
+ //result1-->undefined
+ //result2-->undefined
+
+ //3.Execution Phase
+ //val1 <-- 10
+ //val2 <-- 5
+ //add-->[] create new execution context [new enivornment+execution thred]
+ //for add another memory phase & execution phase executes
+ //memory -> 
+ //val1 -->undefined
+ //val2 -->undefinedval1
+ //tatal->undefined
+//execution phase-->
+ //val1 <-- 10
+ //val2 <-- 5
+ //total<--15
+//after thise thise execution context will deleted
+///__________>
+//result1<--15
+
+
+//same all will repeate for result2
+
+
+
+//call stack
+//its like stack memory  LIFO
